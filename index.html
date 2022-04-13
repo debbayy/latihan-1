@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="/assets/dw.svg" type="image/x-icon" />
+    <title>Number Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="generator">
+        <div class="card">
+          <h1 id="card-title">Odd - Even - Prime</h1>
+          <h2>Generator</h2>
+          <div class="input">
+            <form>
+              <input
+                type="number"
+                id="input-number"
+                name="number"
+                placeholder="Input number here"
+                required
+              /><br /><br />
+              <div class="btn">
+                <button class="odd-btn" type="button" onclick="oddGenerator()">Odd</button>
+                <button class="even-btn" type="button" onclick="evenGenerator()">Even</button>
+                <button class="prime-btn" type="button" onclick="primeGenerator()">Prime</button>
+              </div>
+              <button type="button" class="clear-btn" onclick="resetButton();">Clear</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="result">
+        <div class="display-result">
+          <h1 id="h1">Number Result</h1>
+          <h3 id="number-result">
+            <img src="/assets/result.svg" alt="" />
+          </h3>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
